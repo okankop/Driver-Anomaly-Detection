@@ -35,6 +35,7 @@ Please cite the following article if you use this code or pre-trained models:
   journal={arXiv preprint arXiv:2009.14660},
   year={2020}
 }
+```
 
 ## Acknowledgement
 We thank Yonglong Tian for releasing his [codebase](https://github.com/HobbitLong/CMC), which we build our work on top.
