@@ -1,4 +1,4 @@
-PyTorch implementation of the article "Driver Anomaly Detection: A Dataset and Contrastive Learning Approach".
+PyTorch implementation of the article "[Driver Anomaly Detection: A Dataset and Contrastive Learning Approach](https://arxiv.org/pdf/2009.14660.pdf)".
 
 # Driver-Anomaly-Detection
 
