@@ -23,7 +23,7 @@ PyTorch implementation of the article "[Driver Anomaly Detection: A Dataset and 
 
 ## Running the Code
 Model configurations are given as follows:
-
+```
   ShuffleNetV1-2.0x : --model_type shufflenet    --width_mult 2.0 
   
   ShuffleNetV2-2.0x : --model_type shufflenetv2  --width_mult 2.0
@@ -37,7 +37,7 @@ Model configurations are given as follows:
   ResNet-50         : --model_type resnet   --model_depth 50   --shortcut_type B
   
   ResNet-101        : --model_type resnet   --model_depth 101  --shortcut_type B
-
+```
 
 ## Citation
 
