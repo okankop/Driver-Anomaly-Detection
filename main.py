@@ -19,7 +19,7 @@ from dataset_test import DAD_Test
 
 def parse_args():
     parser = argparse.ArgumentParser(description='DAD training on Videos')
-    parser.add_argument('--root_path', default='', type=str)
+    parser.add_argument('--root_path', default='', type=str, help='root path of the dataset')
     parser.add_argument('--mode', default='train', type=str, help='train | test(validation)')
     parser.add_argument('--view', default='front_IR', type=str, help='front_depth | front_IR | top_depth | top_IR')
     parser.add_argument('--feature_dim', default=128, type=int, help='To which dimension will video clip be embedded')
