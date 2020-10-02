@@ -57,7 +57,7 @@ python main.py \
   --n_split_ratio 1.0 \
   --a_split_ratio 1.0 \
 ```
--Resuming training from a checkpoint: (the resumed models consist of a base encoder model and a projection head model)
+- Resuming training from a checkpoint: (the resumed models consist of a base encoder model and a projection head model)
 ```
 python main.py \
   --root_path /usr/home/sut/datasets/DAD/DAD/ \
@@ -82,9 +82,9 @@ python main.py \
   --n_split_ratio 1.0 \
   --a_split_ratio 1.0 \
 ```
--Training from a pretrained model. Find the corredponding model type in models.py and set the 'pre_model_path' as the path of the pretrained model. Then set '--pre_train_model True ':
-```
+- Training from a pretrained model. Find the corredponding model type in models.py and set the 'pre_model_path' as the path of the pretrained model. Then set '--pre_train_model True ':
 In models.py file:
+```
 pre_model_path = './premodels/kinetics_resnet_18_RGB_16_best.pth'
 ```
 ```
@@ -109,7 +109,12 @@ python main.py \
   --n_split_ratio 1.0 \
   --a_split_ratio 1.0 \
 ```
-
+Augmentations
+```
+There are several augmentation techniques available. Please check spatial_transforms.py and temporal_transforms.py for the details of the augmentation methods.
+```
+Evaluation
+You should train four models of two views and two modalities separatly. After training, set '--mode test \', the accuracy and AUC of these models and the results after fusion will be shown.
 
 
 
