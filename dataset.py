@@ -96,7 +96,7 @@ def listdir(path):
 
 def make_dataset(root_path, subset, view, sample_duration, type=None):
     """
-    :param root_path: root path, and in my case is "F:/A_Master_Arbeit/Dataset/DAD/"
+    :param root_path: root path of the dataset"
     :param subset: train / validation
     :param view: front_depth / front_IR / top_depth / top_IR
     :param sample_duration: how many frames should one sample contain
