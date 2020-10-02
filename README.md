@@ -110,12 +110,12 @@ python main.py \
   --n_split_ratio 1.0 \
   --a_split_ratio 1.0 \
 ```
-Augmentations
+**Augmentations**
 
 There are several augmentation techniques available. Please check spatial_transforms.py and temporal_transforms.py for the details of the augmentation methods.
 
 
-Evaluation
+**Evaluation**
 
 You should train four models of two views and two modalities separatly. After training, set '--mode test \', the accuracy and AUC of these models and the results after fusion will be shown.
 
