@@ -22,6 +22,7 @@ PyTorch implementation of the article "[Driver Anomaly Detection: A Dataset and 
 ## Dataset Preperation
 
 ## Running the Code
+Model configurations are given as follows:
 
 
 ## Citation
