@@ -22,6 +22,7 @@ PyTorch implementation of the article "[Driver Anomaly Detection: A Dataset and 
 ## Dataset Preperation
 
 ## Running the Code
+
 Model configurations are given as follows:
 ```
   ShuffleNetV1-2.0x : --model_type shufflenet    --width_mult 2.0 
@@ -31,6 +32,34 @@ Model configurations are given as follows:
   ResNet-18         : --model_type resnet   --model_depth 18   --shortcut_type A
   ResNet-50         : --model_type resnet   --model_depth 50   --shortcut_type B
   ResNet-101        : --model_type resnet   --model_depth 101  --shortcut_type B
+```
+Please check all 3D CNN models in the 'models' folder and run the code by providing the necessary parameters. An example run is given as follows:
+- Training from scratch:
+```
+python main.py \
+  --root_path /usr/home/sut/datasets/DAD/DAD/ \
+  --mode train \
+  --view top_depth \
+  --model_type resnet \
+  --model_depth 18 \
+  --shortcut_type A \
+  --pre_train_model False \
+  --n_train_batch_size 10 \
+  --a_train_batch_size 150 \
+  --val_batch_size 70\
+  --learning_rate 0.01 \
+  --epochs 250 \
+  --cal_vec_batch_size 100 \
+  --tau 0.1 \
+  --manual_seed 26 \
+  --memory_bank_size 200 \
+  --resume_path '' \
+  --resume_head_path '' \
+  --train_crop 'random' \
+  --n_scales 5 \
+  --downsample 2 \
+  --n_split_ratio 1.0 \
+  --a_split_ratio 1.0 \
 ```
 
 ## Citation
