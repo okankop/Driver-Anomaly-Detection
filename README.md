@@ -84,7 +84,7 @@ python main.py \
 ```
 - Training from a pretrained model. Find the corredponding model type in models.py and set the 'pre_model_path' as the path of the pretrained model. Then set '--pre_train_model True ':
 
-  In models.py file:
+  In model.py file:
 ```
 pre_model_path = './premodels/kinetics_resnet_18_RGB_16_best.pth'
 ```
