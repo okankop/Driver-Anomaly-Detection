@@ -129,7 +129,7 @@ You should train four models of two views and two modalities separatly. After tr
 Please cite the following article if you use this code or pre-trained models:
 
 ```bibtex
-@article{kopuklu2019driver,
+@article{kopuklu2020driver,
   title={Driver Anomaly Detection: A Dataset and Contrastive Learning Approach},
   author={K{\"o}p{\"u}kl{\"u}, Okan and Zheng, Jiapeng and Xu, Hang and Rigoll, Gerhard},
   journal={arXiv preprint arXiv:2009.14660},
