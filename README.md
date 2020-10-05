@@ -21,6 +21,9 @@ PyTorch implementation of the article "[Driver Anomaly Detection: A Dataset and 
 
 ## Dataset Preperation
 
+The download link for the DAD dataset will be available soon!
+
+
 ## Running the Code
 
 Model configurations are given as follows:
