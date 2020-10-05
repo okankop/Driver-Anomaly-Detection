@@ -22,7 +22,7 @@ from dataset_test import DAD_Test
 #==========================================================================================================
 
 #======================================Hyperparameters=====================================================
-root_path = 'F:/A_Master_Arbeit/Dataset/DAD/'  #root path of the dataset
+root_path = '/usr/home/sut/datasets/DAD/DAD/'  #root path of the dataset
 show_which = 'front_depth'  # show which view or modalities: {'front_depth', 'front_IR', 'top_depth', 'top_IR'}
 threshold = 0.81  # the threshold
 delay = 1  # The sample will be processed and shown with a delay of 'delay' ms.
