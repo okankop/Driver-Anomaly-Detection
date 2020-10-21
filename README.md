@@ -21,7 +21,7 @@ PyTorch implementation of the article "[Driver Anomaly Detection: A Dataset and 
 
 ## Dataset Preperation
 
-The download link for the DAD dataset will be available soon!
+The DAD dataset can be downloaded from its [official website](https://www.ei.tum.de/mmk/dad/).
 
 
 ## Running the Code
