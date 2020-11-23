@@ -123,6 +123,19 @@ There are several augmentation techniques available. Please check spatial_transf
 You should train four models of two views and two modalities separatly. After training, set '--mode test \', the accuracy and AUC of these models and the results after fusion will be shown.
 
 
+## Running the Demo
+
+Please download the <i>pretrained model weights</i> and <i>normal driving templates</i> from "[here](https://drive.google.com/drive/folders/1HekFrIvjUTRNZpbsSJd69h5p29wVWP8o?usp=sharing)".
+
+Modify the paths in [demo_live.py](https://github.com/okankop/Driver-Anomaly-Detection/blob/master/demo_live.py) according to the dataset path and pretrainde model paths.
+
+Run the following command to start live demo:
+```
+python live_demo.py
+```
+
+
+
 
 ## Citation
 
