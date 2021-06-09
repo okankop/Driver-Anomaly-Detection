@@ -142,11 +142,12 @@ python live_demo.py
 Please cite the following article if you use this code or pre-trained models:
 
 ```bibtex
-@article{kopuklu2020driver,
-  title={Driver Anomaly Detection: A Dataset and Contrastive Learning Approach},
-  author={K{\"o}p{\"u}kl{\"u}, Okan and Zheng, Jiapeng and Xu, Hang and Rigoll, Gerhard},
-  journal={arXiv preprint arXiv:2009.14660},
-  year={2020}
+@inproceedings{kopuklu2021driver,
+  title={Driver anomaly detection: A dataset and contrastive learning approach},
+  author={Kopuklu, Okan and Zheng, Jiapeng and Xu, Hang and Rigoll, Gerhard},
+  booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
+  pages={91--100},
+  year={2021}
 }
 ```
 
