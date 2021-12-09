@@ -295,7 +295,7 @@ if __name__ == '__main__':
         if args.resume_path == '':
             # ===============generate new model or pre-trained model===============
             model = generate_model(args)
-            optimizer = torch.optim.SGD(model.parameters(), lr=args.learning_rate, momentum=args.momentum,
+            optimizer = torch.optim.SGD(list(model.parameters()) + list(model_head.parameters()), lr=args.learning_rate, momentum=args.momentum,
                                         dampening=dampening, weight_decay=args.weight_decay, nesterov=args.nesterov)
             nce_average = NCEAverage(args.feature_dim, len_neg, len_pos, args.tau, args.Z_momentum)
             criterion = NCECriterion(len_neg)
@@ -313,7 +313,7 @@ if __name__ == '__main__':
             model_head.load_state_dict(resume_head_checkpoint['state_dict'])
             if args.use_cuda:
                 model_head.cuda()
-            optimizer = torch.optim.SGD(model.parameters(), lr=args.learning_rate, momentum=args.momentum,
+            optimizer = torch.optim.SGD(list(model.parameters()) + list(model_head.parameters()), lr=args.learning_rate, momentum=args.momentum,
                                         dampening=dampening, weight_decay=args.weight_decay, nesterov=args.nesterov)
             optimizer.load_state_dict(resume_checkpoint['optimizer'])
             nce_average = resume_checkpoint['nce_average']
